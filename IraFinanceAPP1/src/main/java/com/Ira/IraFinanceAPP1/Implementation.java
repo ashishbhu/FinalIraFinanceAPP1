@@ -2488,7 +2488,7 @@ public class Implementation{
 								}
 								return jo.toString();
 						}
-						rs.previous();
+						//rs.previous();
 							int count=0;
 						while(rs.next())
 						{
@@ -2497,7 +2497,7 @@ public class Implementation{
 							if(rs.getString(1).equals(parent) &&( (dat2.compareTo(rs.getDate(2)))>0 && (dat1.compareTo(rs.getDate(2)))<0 ||(date1.equals(rs.getString(2)) || date2.equals(rs.getString(2)))))
 				 			{
 								//tomail=rs.getString(3);
-								//System.out.println(rs.getString(3));
+								System.out.println("equal");
 								isdate=1;
 								count++;
 								break;
