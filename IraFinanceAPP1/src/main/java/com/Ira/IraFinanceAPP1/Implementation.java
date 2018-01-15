@@ -1442,8 +1442,9 @@ public class Implementation{
 		*/
 		
 		      /*----Fetching all user name from subuser table using main user subid--*/
+				String username1="'"+username+"'";
 		
-				String sub = "select subId,childUserName from subuser where subId="+username;
+				String sub = "select subId,childUserName from subuser where subId="+username1;
 				Statement st1=null;	
 				ResultSet rs1=null;
 				try

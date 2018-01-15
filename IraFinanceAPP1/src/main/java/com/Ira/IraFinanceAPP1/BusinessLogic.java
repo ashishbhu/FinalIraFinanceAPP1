@@ -322,10 +322,12 @@ public class BusinessLogic {
 /*8.-------------------------OK----------GET ALL SUB USER NAME BY MAIN USER NAME------------------------------*/
 	
 	
-	public String getAllSubUser(String username)
+	public String getAllSubUser(String username1)
 	{
+		//System.out.println(username.length());
+		String username=username1;
 		
-		if(username.isEmpty())
+		if(username.isEmpty() || username==null || username.length()<0)
 			return "You must enter parent user name";
 		if(username.length()>10)
 			return "user name can't be greater than 10 character";
